@@ -6,4 +6,9 @@ describe Array do
 		expect(array.inject_2{|sum, num| sum + num}).to eq 10
 	end
 
+	it 'should add strings together' do
+		array = ['1','2','3','4']
+		expect(array.inject_2{|sum, num| sum + num}).to eq '1234'
+	end
+
 end
